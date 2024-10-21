@@ -19,6 +19,7 @@
 # Output: false
 # Explanation: The student was late 3 consecutive days in the last 3 days, so is not eligible for the award.
 
+#time complexity O(n)
 def attendance(a_string):
     consecutive_late = 0
     absent = 0
@@ -34,6 +35,14 @@ def attendance(a_string):
             if absent == 2:
                 return False
     return True
+
+# Using betting time complexity O(n)
+# def attendance(a_string):
+#     if a_string.count('A') >= 2:
+#         return False
+#     if 'LLL' in a_string:
+#         return False
+#     return True
         
 
     
